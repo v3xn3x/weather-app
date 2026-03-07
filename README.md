@@ -8,8 +8,7 @@ A sleek desktop weather application built with **Python**, **PyQt6**, and **Open
 - **Security:** API keys are managed safely using environment variables.
 
 ## 📸 Preview
-<img width="428" height="719" alt="image" src="https://github.com/user-attachments/assets/c0d2843d-9fc8-4e10-b79d-9f85d050d2fc" />
-
+<img width="445" height="774" alt="image" src="https://github.com/user-attachments/assets/83c8b7e4-ed2b-42b0-b1cf-a6ab66abd4f7" />
 
 ## 🛠️ Installation & Setup
 
