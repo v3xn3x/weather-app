@@ -96,7 +96,7 @@
    <widget class="QLabel" name="label_city_name">
     <property name="geometry">
      <rect>
-      <x>-30</x>
+      <x>-20</x>
       <y>70</y>
       <width>391</width>
       <height>91</height>
@@ -150,27 +150,31 @@ background: transparent;</string>
    <widget class="QPushButton" name="city_name_button">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>120</x>
       <y>310</y>
-      <width>131</width>
+      <width>91</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color: #ffffff;
-bg: blue;</string>
+     <string notr="true">border: 1px solid rgba(255, 255, 255, 180);
+border-radius: 10px;
+padding: 8px;</string>
     </property>
     <property name="text">
-     <string>View</string>
+     <string>🔎</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>360</y>
-      <width>321</width>
-      <height>181</height>
+      <x>10</x>
+      <y>370</y>
+      <width>351</width>
+      <height>211</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -182,22 +186,43 @@ bg: blue;</string>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QLabel" name="humidity_label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Humidity: --</string>
+        <string>💧 Humidity: --</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="feels_like_label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Feels Like: --</string>
+        <string>🌡 Feels Like: --</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="wind_speed_label">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Wind Speed: --</string>
+        <string>💨 Wind Speed: --</string>
        </property>
       </widget>
      </item>
@@ -206,8 +231,8 @@ bg: blue;</string>
    <widget class="QLabel" name="label_name">
     <property name="geometry">
      <rect>
-      <x>-20</x>
-      <y>-10</y>
+      <x>-180</x>
+      <y>-20</y>
       <width>611</width>
       <height>851</height>
      </rect>

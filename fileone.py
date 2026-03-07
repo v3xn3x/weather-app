@@ -22,7 +22,7 @@ class WeatherApp(QMainWindow):
 
         self.API_KEY = os.getenv("WEATHER_API_KEY")
         self.city_name_button.clicked.connect(self.get_city_name)
-        self.set_image('d2c77ed131743f4e26b566871695ad49.jpg', self.label_name)
+        self.set_image('backgroundjpg.jpg', self.label_name)
         self.set_image('cloud.png', self.label_cloud)
 
     def set_image(self, filename, target_label):
@@ -40,7 +40,7 @@ class WeatherApp(QMainWindow):
         user_text = self.city_name_input.text().strip()
 
         if not user_text:
-            self.label_city_name.setText("Enter a city...")
+            self.label_city_name.setText("Enter a city")
             return
 
         self.label_city_name.setText(user_text.title())
@@ -57,10 +57,10 @@ class WeatherApp(QMainWindow):
                 wind = data['wind']['speed']
 
                 self.label_temperature.setText(f"{round(temp)}°C")
-                self.humidity_label.setText(f"Humidity: {humid}%")
+                self.humidity_label.setText(f"💧 Humidity: {humid}%")
                 self.feels_like_label.setText(
-                    f"Feels Like: {round(feeling)}°C")
-                self.wind_speed_label.setText(f"Wind: {wind} m/s")
+                    f"🌡 Feels Like: {round(feeling)}°C")
+                self.wind_speed_label.setText(f"💨 Wind Speed: {wind} m/s")
                 self.label_name.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
             elif resp.status_code == 404:
